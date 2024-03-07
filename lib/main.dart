@@ -21,23 +21,30 @@ class MyApp extends StatelessWidget {
               AppBar(
                 title: Text(
                   'Biodata',
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 centerTitle: true,
                 backgroundColor: Colors.blueAccent,
               ),
               // Content
               CircleAvatar(
-                radius: 80,
+                radius: 60,
                 backgroundImage: AssetImage('assets/Pas Foto.jpg'),
               ),
-              Text(
-                "M Arief Rahmatulloh",
-                style: TextStyle(
-                    fontSize: 28.0,
+              Padding(
+                padding: EdgeInsets.only(top: 14.0),
+                child: Text(
+                  "Muhamad Arief Rahmatulloh",
+                  style: TextStyle(
+                    fontSize: 24.0,
                     color: Colors.white,
                     fontFamily: 'Poppins',
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
               Text(
                 "Mahasiswa",
@@ -45,12 +52,12 @@ class MyApp extends StatelessWidget {
                   fontSize: 18.0,
                   color: Colors.white,
                   fontFamily: 'SourceSansPro',
-                  letterSpacing: 2.5,
+                  letterSpacing: 1,
                   fontWeight: FontWeight.normal,
                 ),
               ),
               SizedBox(
-                height: 19.0,
+                height: 10.0,
                 width: 200.0,
                 child: Divider(
                   color: Colors.white,
@@ -59,9 +66,9 @@ class MyApp extends StatelessWidget {
               // Cards
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 12.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Row(
                     children: [
                       Icon(
@@ -71,7 +78,8 @@ class MyApp extends StatelessWidget {
                       SizedBox(width: 20.0),
                       Text(
                         'Muhamad Arief Rahmatulloh',
-                        style: TextStyle(fontSize: 18.0, color: Colors.lightBlue),
+                        style:
+                            TextStyle(fontSize: 18.0, color: Colors.lightBlue),
                       ),
                     ],
                   ),
@@ -79,9 +87,9 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 12.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Row(
                     children: [
                       Icon(
@@ -91,7 +99,8 @@ class MyApp extends StatelessWidget {
                       SizedBox(width: 20.0),
                       Text(
                         '2041013',
-                        style: TextStyle(fontSize: 18.0, color: Colors.lightBlue),
+                        style:
+                            TextStyle(fontSize: 18.0, color: Colors.lightBlue),
                       ),
                     ],
                   ),
@@ -99,9 +108,30 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 12.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.smartphone,
+                        color: Colors.blue,
+                      ),
+                      SizedBox(width: 20.0),
+                      Text(
+                        'Mobile Computing',
+                        style:
+                            TextStyle(fontSize: 18.0, color: Colors.lightBlue),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
                   child: Row(
                     children: [
                       Icon(
@@ -111,7 +141,8 @@ class MyApp extends StatelessWidget {
                       SizedBox(width: 20.0),
                       Text(
                         'S1 Teknik Informatika',
-                        style: TextStyle(fontSize: 18.0, color: Colors.lightBlue),
+                        style:
+                            TextStyle(fontSize: 18.0, color: Colors.lightBlue),
                       ),
                     ],
                   ),
@@ -119,9 +150,9 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 12.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Row(
                     children: [
                       Icon(
@@ -131,7 +162,8 @@ class MyApp extends StatelessWidget {
                       SizedBox(width: 20.0),
                       Text(
                         'STT Mandala Bandung',
-                        style: TextStyle(fontSize: 18.0, color: Colors.lightBlue),
+                        style:
+                            TextStyle(fontSize: 18.0, color: Colors.lightBlue),
                       ),
                     ],
                   ),
@@ -144,10 +176,10 @@ class MyApp extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      '© 2024 muhamadariefr',
+                      '© muhamadariefr',
                       style: TextStyle(
                         fontSize: 14.0,
-                        color: Colors.white,                        
+                        color: Colors.white,
                       ),
                     ),
                   ),
